@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GymTimer</string>
+    <string name="prompt">Choose a sex</string>
+    <string-array name="sex_array">
+        <item>Nam</item>
+        <item>Nu</item>
+        <item>Khác</item>
+    </string-array>
+    <string name="title_activity_begin">BeginActivity</string>
+</resources>
