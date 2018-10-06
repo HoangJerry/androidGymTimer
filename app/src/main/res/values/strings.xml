@@ -7,4 +7,5 @@
         <item>Khác</item>
     </string-array>
     <string name="title_activity_begin">BeginActivity</string>
+    <string name="title_activity_screen3">activity_screen3</string>
 </resources>

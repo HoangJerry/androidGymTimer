@@ -6,58 +6,57 @@
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_height="10dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_centerInParent="true"
+            android:orientation="vertical"
 
             >
+
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="90dp"
-                android:text="GYM TIMER"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:textSize="50dp"
                 android:layout_marginBottom="50dp"
+                android:text="GYM TIMER"
                 android:textAlignment="center"
-                />
+                android:textColor="@color/colorWhite"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/txt_username"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/custom_edit_text"
-                android:hint="   Username"
-                />
+                android:hint="   Username" />
+
             <EditText
                 android:id="@+id/txt_gender"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/custom_edit_text"
-                android:hint="   Gender"
-                />
+                android:hint="   Gender" />
+
             <EditText
                 android:id="@+id/txt_weight"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/custom_edit_text"
-                android:hint="   Weight"
-                />
+                android:hint="   Weight" />
+
             <EditText
                 android:id="@+id/txt_age"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:background="@drawable/custom_edit_text"
-                android:hint="    Age "
-                />
+                android:hint="    Age " />
         </LinearLayout>
     </RelativeLayout>
     <LinearLayout
