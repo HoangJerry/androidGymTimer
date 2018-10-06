@@ -11,15 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
         <activity
-            android:name=".BeginActivity"
-            android:label="@string/title_activity_begin">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".activity_screen3"
             android:label="@string/title_activity_screen3"></activity>
     </application>
