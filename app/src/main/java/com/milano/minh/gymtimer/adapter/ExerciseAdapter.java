@@ -1,6 +1,8 @@
 package com.milano.minh.gymtimer.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
@@ -10,18 +12,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.milano.minh.gymtimer.BeginActivity;
 import com.milano.minh.gymtimer.R;
 import com.milano.minh.gymtimer.models.Execise;
+import com.milano.minh.gymtimer.models.ExerciseDetailActivity;
 
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 public class ExerciseAdapter extends BaseAdapter {
-    Context context;
+    Activity context;
     ArrayList<Execise> list;
 
-    public ExerciseAdapter(Context context, ArrayList<Execise> list) {
+    public ExerciseAdapter(Activity context, ArrayList<Execise> list) {
         this.context = context;
         this.list = list;
     }
@@ -47,10 +51,20 @@ public class ExerciseAdapter extends BaseAdapter {
         View row = inflater.inflate(R.layout.item_gym_lesson, null);
         TextView tv_lesson = (TextView) row.findViewById(R.id.tv_lesson);
         ImageView imgExercise = (ImageView) row.findViewById(R.id.iv_lesson);
-        Execise execise = list.get(position);
+        final Execise execise = list.get(position);
         tv_lesson.setText(execise.getName() + "");
         Bitmap bmExecise = BitmapFactory.decodeByteArray(execise.getPicture(), 0, execise.getPicture().length);
         imgExercise.setImageBitmap(bmExecise);
+
+        row.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ExerciseDetailActivity.class);
+                intent.putExtra("ID", execise.getId());
+                context.startActivity(intent);
+
+            }
+        });
         return row;
     }
 }
