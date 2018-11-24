@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GymTimer</string>
+    <string name="show">Xem bài tập</string>
+    <string name="setup">Tạo bài tập</string>
+    <string name="title_activity_begin">Bắt đầu</string>
+</resources>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -56,7 +55,7 @@
                     android:layout_marginRight="0dp"
                     android:background="#80ffffff"
                     android:paddingTop="0dp"
-                    android:text="Beginner"
+                    android:text="@string/setup"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -84,37 +83,38 @@
                     android:layout_marginRight="0dp"
                     android:background="#80ffffff"
                     android:paddingTop="0dp"
-                    android:text="Medium"
+                    android:text="@string/show"
                     android:textSize="30sp" />
             </LinearLayout>
 
-            <LinearLayout
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_US"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:text="Tiếng Anh"
+                />
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="0dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginRight="0dp"
-                    android:background="@drawable/muc3" />
-
-                <Button
-                    android:id="@+id/btn_muc3"
-                    android:layout_width="220dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="0dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginRight="0dp"
-                    android:background="#80ffffff"
-                    android:paddingTop="0dp"
-                    android:text="Hard"
-                    android:textSize="30sp" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btn_VN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiếng Việt"
+              />
+            />
         </LinearLayout>
 
     </RelativeLayout>

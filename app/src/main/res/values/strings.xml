@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">GymTimer</string>
     <string name="prompt">Choose a sex</string>
+    <string name="setup">Create exercise</string>
+    <string name="show">Show exercise</string>
     <string-array name="sex_array">
         <item>Nam</item>
         <item>Nu</item>
