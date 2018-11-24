@@ -56,7 +56,7 @@
                     android:layout_marginRight="0dp"
                     android:background="#80ffffff"
                     android:paddingTop="0dp"
-                    android:text="Beginner"
+                    android:text="@string/setup"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -84,37 +84,45 @@
                     android:layout_marginRight="0dp"
                     android:background="#80ffffff"
                     android:paddingTop="0dp"
-                    android:text="Medium"
+                    android:text="@string/show"
                     android:textSize="30sp" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="0dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginRight="0dp"
-                    android:background="@drawable/muc3" />
+        </LinearLayout>
 
-                <Button
-                    android:id="@+id/btn_muc3"
-                    android:layout_width="220dp"
-                    android:layout_height="80dp"
-                    android:layout_margin="0dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginRight="0dp"
-                    android:background="#80ffffff"
-                    android:paddingTop="0dp"
-                    android:text="Hard"
-                    android:textSize="30sp" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_US"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/uss"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="US" />
+
+            <Button
+                android:id="@+id/btn_VN"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vn"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="100px"
+                tools:text="VN" />
+            />
         </LinearLayout>
 
     </RelativeLayout>
