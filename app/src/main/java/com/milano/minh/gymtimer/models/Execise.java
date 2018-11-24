@@ -5,6 +5,15 @@ public class Execise {
     private String name;
     private String content;
     private byte[] picture;
+    private String youtube;
+
+    public Execise(int id, String name, String content, byte[] picture, String youtube) {
+        this.id = id;
+        this.name = name;
+        this.content = content;
+        this.picture = picture;
+        this.youtube = youtube;
+    }
 
     public Execise(int id, String name, String content, byte[] picture) {
         this.id = id;
@@ -43,6 +52,14 @@ public class Execise {
 
     public void setPicture(byte[] picture) {
         this.picture = picture;
+    }
+
+    public String getYoutube() {
+        return youtube;
+    }
+
+    public void setYoutube(String youtube) {
+        this.youtube = youtube;
     }
 }
 
