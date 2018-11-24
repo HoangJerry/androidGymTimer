@@ -3,6 +3,13 @@
     <string name="prompt">Choose a sex</string>
     <string name="setup">Create exercise</string>
     <string name="show">Show exercise</string>
+    <string name="name">Name</string>
+    <string name="choose_img">CHOOSE IMAGE</string>
+    <string name="content">Content</string>
+    <string name="key_youtube">Key Youtube</string>
+    <string name="create_exe">Create Exercise</string>
+    <string name="take_photo">TAKE PHOTO</string>
+    <string name="submit">Submit</string>
     <string-array name="sex_array">
         <item>Nam</item>
         <item>Nu</item>

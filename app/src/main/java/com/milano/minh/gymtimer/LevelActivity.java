@@ -20,7 +20,7 @@ public class LevelActivity extends AppCompatActivity {
         btn_muc1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LevelActivity.this, LessonActivity.class);
+                Intent intent = new Intent(LevelActivity.this, CreateActivity.class);
                 startActivity(intent);
             }
         });

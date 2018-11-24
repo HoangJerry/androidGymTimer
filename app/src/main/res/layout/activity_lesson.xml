@@ -7,5 +7,6 @@
     <ListView
         android:id="@+id/lvLesson"
         android:layout_width="match_parent"
+        android:background="#C0C0C0"
         android:layout_height="match_parent" />
 </RelativeLayout>

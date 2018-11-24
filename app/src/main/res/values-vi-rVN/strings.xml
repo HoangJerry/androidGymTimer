@@ -4,4 +4,11 @@
     <string name="show">Xem bài tập</string>
     <string name="setup">Tạo bài tập</string>
     <string name="title_activity_begin">Bắt đầu</string>
+    <string name="name">Tên bài tập</string>
+    <string name="choose_img">Chọn hình ảnh</string>
+    <string name="content">Nội dung</string>
+    <string name="key_youtube">Key của youtube</string>
+    <string name="create_exe">Tạo bài tập</string>
+    <string name="take_photo">Chụp hình</string>
+    <string name="submit">Tạo mới</string>
 </resources>
