@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         database = Database.initDatabase(this, DATABASE_NAME);
         Cursor cursor = database.rawQuery("SELECT * FROM exercise", null);
         cursor.moveToFirst();
-        Toast.makeText(this, cursor.getString(1), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, cursor.getString(4), Toast.LENGTH_LONG).show();
         new android.os.Handler().postDelayed(
                 new Runnable() {
                     public void run() {

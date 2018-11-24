@@ -45,7 +45,8 @@ public class LessonActivity extends AppCompatActivity {
             String name = cursor.getString(1);
             String content = cursor.getString(2);
             byte [] picture = cursor.getBlob(3);
-            list.add(new Execise(id, name, content, picture));
+            String youtube = cursor.getString(4);
+            list.add(new Execise(id, name, content, picture, youtube));
         }
         adapter.notifyDataSetChanged();
     }
